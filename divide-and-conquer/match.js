@@ -25,8 +25,8 @@ self.power = function(num) {
 
 self.copy = function(halfArray, array) {
     let size = halfArray.length;
-    for (var i = 0; i < size; i ++) {
-        for (var j = 0; j < size; j ++) {
+    for (let i = 0; i < size; i ++) {
+        for (let j = 0; j < size; j ++) {
             array[i       ][j       ] = halfArray[i][j];
             array[i       ][j + size] = halfArray[i][j] + size;
             array[i + size][j       ] = halfArray[i][j] + size;
@@ -38,7 +38,7 @@ self.copy = function(halfArray, array) {
 
 self.createArray = function(size) {
     let array = new Array(size);
-    for (var i = 0; i < size; i ++) {
+    for (let i = 0; i < size; i ++) {
         array[i] = new Array(size);
     }
     return array;
