@@ -37,10 +37,20 @@ self.calculator = function() {
     }
 };
 
+self.getPutGoods = function() {
+    let currentCapacity = self.capacity;
+    for (let i = self.goods.length; i >= 1; i --) {
+        if (self.values[i][currentCapacity] !== self.values[i - 1][currentCapacity]) {
+            console.log('物品: 重量: ' + self.goods[i - 1].weight + '价值: ' + self.goods[i - 1].value);
+            currentCapacity -= self.goods[i - 1].weight;
+        }
+    }
+};
+
 self.run = function() {
     self.init();
     self.calculator();
-    console.log(self.values);
+    self.getPutGoods();
 };
 
 self.run();
