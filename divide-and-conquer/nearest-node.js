@@ -6,7 +6,7 @@ self.Node = function(x, y) {
 self.Line = function(startNode, endNode) {
     this.startNode = startNode;
     this.endNode = endNode;
-}
+};
 
 self.Line.prototype.distance = function() {
     let x = this.endNode.x - this.startNode.x;

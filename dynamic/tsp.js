@@ -1,7 +1,7 @@
 self.Line = function(distance, point) {
     this.distance = distance;
     this.point = point;
-}
+};
 
 self.init = function() {
     self.number = 4;
