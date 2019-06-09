@@ -47,15 +47,15 @@ self.calValues = function(start, array) {
 self.getOrder = function(start, array) {
     let point = self.values[start].get(array.toString()).point;
     if (array.length === 0) {
-        return " ---> " + point;
+        return ' ---> ' + point;
     }
     let clone = array.slice();
     clone.splice(clone.indexOf(point), 1);
-    let result = "";
+    let result = '';
     if (start === 0) {
-        result = start + " ---> " + point;
+        result = start + ' ---> ' + point;
     } else {
-        result = " ---> " + point;
+        result = ' ---> ' + point;
     }
     return result + self.getOrder(point, clone);
 };
