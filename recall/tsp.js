@@ -8,6 +8,14 @@ self.init = function() {
     ];
 };
 
+self.tsp = function(deep) {
+    if (deep !== self.number) {
+        for (let i = deep; i < self.number; i ++) {
+            //
+        }
+    }
+};
+
 self.run = function() {
     self.init();
 };
